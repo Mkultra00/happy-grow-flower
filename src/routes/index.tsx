@@ -119,22 +119,22 @@ function FlowerStage() {
       </div>
 
       {/* Big melting butter in its leaf-hands */}
-      <div className="f-butter absolute bottom-[112px] left-[12px] w-[88px]">
-        <div className="f-butter-wobble relative h-[54px]">
+      <div className="f-butter absolute bottom-[118px] left-[62px] w-[116px]">
+        <div className="f-butter-wobble relative h-[64px]">
           {/* melting block */}
-          <div className="relative h-full rounded-[16px] bg-butter ring-1 ring-ink/10">
-            <div className="absolute top-2.5 left-4 h-3 w-9 rounded-full bg-cloud/80" />
-            <div className="absolute right-3 bottom-2 h-2 w-5 rounded-full bg-butter-deep/70" />
+          <div className="relative h-full rounded-[18px] bg-butter ring-1 ring-ink/10">
+            <div className="absolute top-3 left-5 h-3.5 w-11 rounded-full bg-cloud/80" />
+            <div className="absolute right-4 bottom-2.5 h-2.5 w-6 rounded-full bg-butter-deep/70" />
           </div>
           {/* drips */}
-          <div className="f-drip f-drip-a absolute top-[44px] left-2.5 h-8 w-3 rounded-full bg-butter" />
-          <div className="f-drip f-drip-b absolute top-[44px] left-[38px] h-5 w-2.5 rounded-full bg-butter" />
-          <div className="f-drip f-drip-c absolute top-[44px] right-2.5 h-9 w-3 rounded-full bg-butter" />
+          <div className="f-drip f-drip-a absolute top-[54px] left-3 h-9 w-3.5 rounded-full bg-butter" />
+          <div className="f-drip f-drip-b absolute top-[54px] left-[50px] h-6 w-3 rounded-full bg-butter" />
+          <div className="f-drip f-drip-c absolute top-[54px] right-3 h-10 w-3.5 rounded-full bg-butter" />
           {/* melted puddle */}
-          <div className="absolute -bottom-3 -left-4 h-4 w-[104px] rounded-full bg-butter-deep opacity-80" />
+          <div className="absolute -bottom-3.5 -left-4 h-4.5 w-[132px] rounded-full bg-butter-deep opacity-80" />
           {/* leaf hands gripping the butter */}
-          <div className="absolute -top-1.5 -left-3 size-5 rounded-full bg-leaf" />
-          <div className="absolute -top-1.5 -right-3 size-5 rounded-full bg-leaf" />
+          <div className="absolute -top-1.5 -left-3 size-6 rounded-full bg-leaf" />
+          <div className="absolute -top-1.5 -right-3 size-6 rounded-full bg-leaf" />
         </div>
       </div>
 
