@@ -11,7 +11,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "A cute cartoon flower grows from a sprout to a full bloom, smiles, and says thank you! Watch it unfold.",
+          "A cute cartoon flower grows from a sprout to a full bloom, holds a big melting piece of butter, smiles, and says thank you for the butter!",
       },
       {
         property: "og:title",
@@ -20,7 +20,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "A cute cartoon flower grows from a sprout to a full bloom, smiles, and says thank you!",
+          "A cute cartoon flower grows, holds a big melting piece of butter, smiles, and says thank you for the butter!",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -118,11 +118,31 @@ function FlowerStage() {
         </div>
       </div>
 
+      {/* Big melting butter in its leaf-hands */}
+      <div className="f-butter absolute bottom-[112px] left-[12px] w-[88px]">
+        <div className="f-butter-wobble relative h-[54px]">
+          {/* melting block */}
+          <div className="relative h-full rounded-[16px] bg-butter ring-1 ring-ink/10">
+            <div className="absolute top-2.5 left-4 h-3 w-9 rounded-full bg-cloud/80" />
+            <div className="absolute right-3 bottom-2 h-2 w-5 rounded-full bg-butter-deep/70" />
+          </div>
+          {/* drips */}
+          <div className="f-drip f-drip-a absolute top-[44px] left-2.5 h-8 w-3 rounded-full bg-butter" />
+          <div className="f-drip f-drip-b absolute top-[44px] left-[38px] h-5 w-2.5 rounded-full bg-butter" />
+          <div className="f-drip f-drip-c absolute top-[44px] right-2.5 h-9 w-3 rounded-full bg-butter" />
+          {/* melted puddle */}
+          <div className="absolute -bottom-3 -left-4 h-4 w-[104px] rounded-full bg-butter-deep opacity-80" />
+          {/* leaf hands gripping the butter */}
+          <div className="absolute -top-1.5 -left-3 size-5 rounded-full bg-leaf" />
+          <div className="absolute -top-1.5 -right-3 size-5 rounded-full bg-leaf" />
+        </div>
+      </div>
+
       {/* Speech bubble */}
       <div className="f-bubble absolute bottom-[262px] left-1/2 -translate-x-1/2">
         <div className="relative rounded-[22px] bg-cloud px-6 py-3 shadow-[0_14px_30px_-14px_rgba(90,80,60,0.5)] ring-1 ring-black/5">
-          <span className="font-hand text-3xl leading-none font-bold text-petal">
-            thank you!
+          <span className="font-hand text-3xl leading-none font-bold whitespace-nowrap text-petal">
+            thank you for the butter!
           </span>
           <span className="absolute -bottom-2 left-1/2 h-4 w-4 -translate-x-1/2 rotate-45 rounded-[4px] bg-cloud" />
         </div>
@@ -196,8 +216,8 @@ function Index() {
               A little bloom, just for you.
             </h1>
             <p className="mx-auto mt-2 max-w-[34ch] text-sm leading-relaxed text-pretty text-ink-soft">
-              A hand-made keepsake card that grows into a smile and says thank
-              you. Watch it unfold.
+              A hand-made keepsake card that grows into a smile and holds a
+              big, melting piece of butter it is very grateful for.
             </p>
             <button
               type="button"
