@@ -39,14 +39,14 @@ function FlowerStage() {
 
       {/* Leaves */}
       <div
-        className="absolute bottom-[86px] left-1/2 h-9 w-14 -translate-x-1/2 origin-center"
-        style={{ transform: "translateX(-50%) rotate(-32deg)" }}
+        className="absolute bottom-[88px] left-1/2 h-9 w-14 origin-bottom-right"
+        style={{ transform: "translateX(-88%) rotate(-34deg)" }}
       >
         <div className="f-leaf f-leaf-a h-full w-full rounded-full bg-leaf" />
       </div>
       <div
-        className="absolute bottom-[118px] left-1/2 h-8 w-12 -translate-x-1/2 origin-center"
-        style={{ transform: "translateX(-50%) rotate(22deg)" }}
+        className="absolute bottom-[120px] left-1/2 h-8 w-12 origin-bottom-left"
+        style={{ transform: "translateX(-12%) rotate(24deg)" }}
       >
         <div className="f-leaf f-leaf-b h-full w-full rounded-full bg-leaf" />
       </div>
